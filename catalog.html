@@ -7,11 +7,11 @@
   <body>
     <div class="index-grid">
       <header class="page-header">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Логотип города Седона." src="">
+        </a>
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" alt="Логотип города Седона." src="">
-          </a>
-          <ul class="navigation-list">
+        <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
@@ -56,7 +56,7 @@
           </ul>
         </header>
         <section class="catalog-objects">
-          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          <h2 class="visually-hidden">Фильтрация</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -106,10 +106,11 @@
           </form>
         </section>
         <section class="results">
+          <h2 class="visually-hidden">Результаты поиска</h2>
           <p class="results-of-search">Найдено гостиниц:
             <span class="results-of-count">38</span>
           </p>
-          <select class="select-control" area-label="Сортировка">
+          <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
@@ -198,6 +199,18 @@
               <a class="pagination-link" href="">10</a>
             </li>
           </ul>
+        </section>
+        <section class="newsletter">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p class="newsletter-slogan">Подпишитесь на рассылку</p>
+          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email">
+              <span class="visually-hidden">Email</span>
+            </label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <footer class="page-footer">
