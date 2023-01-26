@@ -27,11 +27,16 @@
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
-            <li class="navigation-item">
-              <span class="visually-hidden">Счетчик добавления в избранное</span>
             </li>
             <li class="navigation-item">
-              <button class="buttons buttons-small" type="button">Хочу сюда!</button>
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="button">Хочу сюда!</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -39,7 +44,6 @@
       <main class="main-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
-
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
@@ -94,26 +98,32 @@
                 </li>
               </ul>
             </fieldset>
+            <p>Стоимость, ₽:</p>
             <button class="button" type="submit">Применить</button>
             <button class="button" type="submit">Сбросить</button>
           </form>
         </section>
+        <section class="results">
+          <p class="results-of-search">Найдено гостиниц:
+            <span class="results-of-count">38</span>
+          </p>
+          <select class="select-control" area-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a class="button-grid" href="">
+            <span class="visual-hidden">Показать гридом</span>
+          </a>
+          <a class="button-card" href="">
+            <span class="visual-hidden">Показать карточки</span>
+          </a>
+          <a class="button-list" href="">
+            <span class="visual-hidden">Показать списком</span>
+          </a>
+        </section>
       </main>
       <footer class="page-footer">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <section class="newsletter">
-          <h3 class="page-footer-slogan">Подпишитесь на рассылку</h3>
-          <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">
-              <span class="visually-hidden">Email</span>
-            </label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
-        </section>
-        <section class="footer-contacts">
-          <h3 class="visually-hidden">Контакты</h3>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="https://vk.com/htmlacademy">
@@ -133,9 +143,8 @@
           </ul>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="footer-logo" href="https://htmlacademy.ru/">
-            <img class="footer-logo" alt="Логотип HTMLacademy" src="">
+            <img class="footer-logo" alt="Логотип HTMLacademy." src="">
           </a>
-        </section>
       </footer>
     </div>
   </body>

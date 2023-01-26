@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-
   <body>
     <div class="index-grid">
       <header class="page-header">
@@ -14,13 +13,13 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -102,12 +101,10 @@
           <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
-      </main>
-      <footer class="page-footer">
-        <h2 class="visually-hidden">Контактная информация</h2>
         <section class="newsletter">
-          <h3 class="page-footer-slogan">Подпишитесь на рассылку</h3>
-          <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p class="newsletter-slogan">Подпишитесь на рассылку</p>
+          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">
               <span class="visually-hidden">Email</span>
@@ -116,8 +113,9 @@
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
-        <section class="footer-contacts">
-          <h3 class="visually-hidden">Контакты</h3>
+      </main>
+      <footer class="page-footer">
+        <h2 class="visually-hidden">Контактная информация</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="https://vk.com/htmlacademy">
@@ -139,7 +137,6 @@
           <a class="footer-logo" href="https://htmlacademy.ru/">
             <img class="footer-logo" alt="Логотип HTMLacademy." src="">
           </a>
-        </section>
       </footer>
     </div>
   </body>
