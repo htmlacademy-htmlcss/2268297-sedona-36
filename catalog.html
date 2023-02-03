@@ -12,7 +12,7 @@
           <img class="page-header-logo" src="images/logo-sedona.svg" windth="140" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
@@ -23,7 +23,7 @@
               <a class="navigation-link current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-list navigation-user list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -41,7 +41,7 @@
         </nav>
       </header>
       <main class="main">
-        <div class="catalog-filter">
+        <div class="header-catalog">
           <header class="header">
             <h1 class="header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -60,7 +60,7 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list list">
                   <li class="catalog-filter-item">
                     <label class="control">
                      <input class="control-input" type="checkbox" name="pool" checked>Бассейн
@@ -80,7 +80,7 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list list">
                   <li class="catalog-filter-item">
                     <label>
                       <input class="control-input" type="radio" name="type-of-living" value="hotel" checked>Гостиница
@@ -180,7 +180,7 @@
             </p>
             <p class="hotel-rating">Рейтинг отеля:5,0</p>
           </article>
-          <ul class="pagination">
+          <ul class="pagination list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -203,8 +203,8 @@
         </section>
         <section class="newsletter">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="newsletter-slogan">Подпишитесь на рассылку</p>
-          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="newsletter-slogan slogan">Подпишитесь на рассылку</p>
+          <p class="newsletter-description description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">
               <span class="visually-hidden">Email</span>
@@ -216,19 +216,19 @@
       </main>
       <footer class="page-footer">
         <h2 class="visually-hidden">Контактная информация</h2>
-          <ul class="footer-social-list">
+          <ul class="footer-social-list list">
             <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+              <a class="social-button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="social-button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
               </a>
              </li>
