@@ -58,6 +58,8 @@ body {
 }
 
 .newsletter-form .button  {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
@@ -78,7 +80,7 @@ body {
   vertical-align: top;
 }
 
-.list, .breadcrumbs {
+.list {
   list-style:none;
   padding-left: 0;
 }
@@ -146,6 +148,7 @@ body {
  font-size: 18px;
  line-height: 24px;
  color:#000000;
+ background-color:#F2F2F2 ;
 }
 
 .contacts-phone {
@@ -175,6 +178,22 @@ body {
   text-transform: uppercase;
 }
 
+.breadcrumbs-item {
+  font-size: 16px;
+  list-style:none;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.control-input {
+  line-height: 23px;
+}
+
 .select-control {
   color: #333333;
 }
@@ -202,6 +221,20 @@ body {
   text-transform: uppercase;
   background-color: #F2F2F2;
   text-align: center;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #82B3D3;
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.pagination-current {
+  color:#000000;
+  background: #F2F2F2;
 }
 
 .newsletter {
