@@ -21,8 +21,14 @@ body {
   line-height: 21px;
   font-weight: 400;
   color:#000000;
-  background-color:#ffffff;
+  background-color: #F2F2F2;
   margin: 0;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
 }
 
 .button {
