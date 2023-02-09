@@ -27,10 +27,13 @@ body {
   color:#000000;
   background-color: #F2F2F2;
   margin: 0;
-  display: flex;
+  height: 100%;
 }
 
 .grid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
@@ -117,8 +120,9 @@ body {
   background-size: 100% auto;
 }
 
-.main-index {
+.main-index, .main-page {
   text-align: center;
+  flex-grow: 1;
 }
 
 .advantages-title, .services-title  {
