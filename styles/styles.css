@@ -132,14 +132,15 @@ body {
   text-transform: uppercase;
 }
 
-.description {
+.promo {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
 }
 
 .welcome {
-  color:#ffffff
+  color:#ffffff;
+  height: 485px;
   background-color: #000000;
   background: url("../images/welcome-background.jpg") no-repeat;
   background-size: 100% auto;
@@ -150,11 +151,46 @@ body {
   flex-grow: 1;
 }
 
+.advantages-slogan {
+  padding: 0;
+  margin: 69px 290px 25px;
+}
+
+.advantages-promo {
+  padding: 0;
+  margin: 0 274px 90px;
+}
+
 .advantages-title, .services-title  {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  display: block;
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-item-image {
+  width: 800px;
+}
+
+.advantages-title {
+  padding: 0;
+  margin: 112px 112px 62px;
+}
+
+.advantages-description {
+  padding: 0;
+  margin: 0 85px auto;
 }
 
 .advantages-item:first-child {
