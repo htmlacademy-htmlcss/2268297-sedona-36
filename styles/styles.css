@@ -40,8 +40,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
-  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -78,7 +84,7 @@ body {
   width: 376px;
   height: 52px;
   display: block;
-  margin: 0 412px 96px;
+  margin: 0 auto;
 }
 
 .newsletter-form .button  {
@@ -93,6 +99,12 @@ body {
   border: 0;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
   width: 1200px;
@@ -102,6 +114,8 @@ body {
 .navigation {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  width: 1060px;
 }
 
 .navigation-logo {
@@ -113,11 +127,15 @@ body {
 
 .navigation-list {
   display: flex;
-  width: 460px;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style-type: none;
   }
 
 .navigation-user {
-  width: 360px;
+  max-width: 362px;
   margin-left: auto;
 }
 
@@ -126,15 +144,26 @@ body {
   line-height: 24px;
   color: inherit;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
-  vertical-align: top;
+  display: block;
+  padding: 20px 16px;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+  padding: 22px 13px;
+}
+
+.navigation-item .button {
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  margin: 14px 70px 14px 22px;
+  text-align: center;
+  border-radius: 4px;
+
 }
 
 .slogan {
@@ -153,12 +182,15 @@ body {
 .welcome {
   color:#ffffff;
   width: 1200px;
-  height: 485px;
   background-color: #000000;
   background: url("../images/welcome-background.jpg") no-repeat;
   background-size: 100% auto;
-}
+ }
 
+ .logo {
+  margin-top: 51px;
+  margin-bottom: 82px;
+ }
 .main-index {
   width: 1200px;
   flex-grow: 1;
@@ -172,16 +204,16 @@ body {
 
 .advantages {
   width: 1200px;
+  padding-top: 69px;
 }
 
 .advantages-slogan {
-  padding: 0;
-  margin: 69px 290px 25px;
+  margin: 0 290px 25px;
 }
 
 .advantages-promo {
   padding: 0;
-  margin: 0 274px 90px;
+  margin: 0 274px 69px;
 }
 
 .advantages-title, .services-title  {
@@ -236,15 +268,14 @@ body {
 
 .services {
   width: 1200px;
+  padding-top: 64px;
 }
 
 .services-slogan {
-  padding: 0;
-  margin: 64px 347px 20px;
+  margin: 0 347px 20px;
 }
 
 .services-promo {
-  padding: 0;
   margin: 0 355px 64px;
 }
 
@@ -286,9 +317,14 @@ body {
   margin: 0 85px 81px;
 }
 
+.search {
+  width: 1200px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .search-slogan {
-  padding: 0;
-  margin: 96px 451px 20px;
+  margin: 0 451px 20px;
 }
 
 .search-description {
@@ -296,17 +332,23 @@ body {
   margin: 0 304px 54px;
 }
 
-.newsletter-index {
-  color:#ffffff;
-  background: url("../images/newsletter-background.jpg") no-repeat;
+.newsletter {
   background-size: 100% auto;
   width: 1200px;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.main-index .newsletter  {
+  background: url("../images/newsletter-background.jpg") no-repeat;
+  color:#ffffff;
 }
 
 .newsletter-slogan {
   padding: 0;
-  margin: 96px 398px 20px;
-}
+  margin: 0 398px 20px;
+ }
 
 .newsletter-description {
   padding: 0;
@@ -327,27 +369,33 @@ body {
 
 .page-footer {
  display: flex;
- width: 1200px;
+ width: 1060px;
+ padding: 40px 70px 30px;
 }
 
 .footer-social-list {
   display: flex;
-  width: 253px;
+  flex-wrap: wrap;
+  width: 282px;
 }
 
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+}
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
   color:#000000;
   text-decoration: none;
   vertical-align: top;
-  width: 720px;
+  width: 496px;
   text-align: center;
 }
 
 .footer-logo {
-  margin-left: auto;
-}
+  width: 282px;
+  }
 
 .filter {
   background: #000000 url("../images/filter-background.jpg") no-repeat 50%/cover;
@@ -395,12 +443,12 @@ body {
   margin-right: 70px;
   flex-wrap: wrap;
   width: 1060px;
+  justify-content: space-between;
 }
 
 .hotel-card {
   width: 340px;
   height: 438px;
-  justify-content: space-between;
 }
 
 .catalog-filter-title {
@@ -434,7 +482,14 @@ body {
   color: #000000;
 }
 
+.type-of-hotel {
+  display: inline-block;
+  width: 150px;
+}
+
 .min-price {
+  display: inline-block;
+  width: 150px;
   text-align: right;
 }
 
@@ -464,13 +519,9 @@ body {
   display: block;
   width: 60px;
   height: 60px;
-}
+ }
 
 .pagination-current {
   color:#000000;
   background: #F2F2F2;
-}
-
-.newsletter {
-  text-align: center;
 }
