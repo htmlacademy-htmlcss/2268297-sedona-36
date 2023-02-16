@@ -544,6 +544,11 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 40px 0 70px;
+  gap: 8px;
 }
 
 .hotel-rating {
@@ -562,9 +567,9 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   color:#ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
   display: block;
-  width: 60px;
-  height: 60px;
  }
 
 .pagination-current {
