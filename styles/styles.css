@@ -14,6 +14,9 @@
   font-display: swap;
 }
 
+* {
+  outline: 2px solid indigo;
+}
 html {
   height: 100%;
 }
@@ -59,8 +62,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color:#ffffff;
-  background-color: #756157;
-}
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
 
 .button-color0 {
   background-color: rgba(0, 0, 0, 0);
@@ -81,10 +85,7 @@ body {
 .search .button {
   font-size: 20px;
   line-height: 36px;
-  width: 376px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
+  padding: 8px 50px;
 }
 
 .newsletter-form .button  {
@@ -93,50 +94,49 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
-  width: 232px;
-  height: 52px;
-  padding: 0;
+  padding: 8px 50px;
   border: 0;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .header {
   display: flex;
-  width: 1200px;
+  padding-left: 70px;
+  padding-right: 70px;
   background-color:#ffffff;
+  gap: 28px;
 }
 
 .navigation {
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 1060px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .navigation-logo {
-  width: 140px;
-  height: 70px;
-  margin-left: 70px;
-  margin-right: 28px;
+  margin-bottom: -15px;
+  z-index: 1;
+
 }
 
 .navigation-list {
   display: flex;
-  width: 600px;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
   list-style-type: none;
+  max-width: 550px;
   }
 
+.navigation-item {
+  display:block;
+}
+
 .navigation-user {
-  max-width: 362px;
   margin-left: auto;
+  align-items: center;
+  max-width: 360px;
 }
 
 .navigation-link {
@@ -157,14 +157,8 @@ body {
 }
 
 .navigation-item .button {
-  display: inline-block;
-  width: 160px;
-  height: 36px;
-  margin: 14px 70px 14px 22px;
-  text-align: center;
-  border-radius: 4px;
-
-}
+  padding: 8px 34px;
+ }
 
 .slogan {
   font-weight: 700;
@@ -173,47 +167,21 @@ body {
   text-transform: uppercase;
 }
 
-.promo {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-}
-
 .welcome {
   color:#ffffff;
-  width: 1200px;
   background-color: #000000;
   background: url("../images/welcome-background.jpg") no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  padding: 51px 371px 82px;
  }
 
- .logo {
-  margin-top: 51px;
-  margin-bottom: 82px;
- }
 .main-index {
-  width: 1200px;
   flex-grow: 1;
   text-align: center;
 }
 
 .main-page {
-  width: 1200px;
   flex-grow: 1;
-}
-
-.advantages {
-  width: 1200px;
-  padding-top: 69px;
-}
-
-.advantages-slogan {
-  margin: 0 290px 25px;
-}
-
-.advantages-promo {
-  padding: 0;
-  margin: 0 274px 69px;
 }
 
 .advantages-title, .services-title  {
@@ -223,37 +191,59 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-header {
+  padding: 70px 274px;
+}
+
+.advantages-slogan {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.advantages-promo {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
-  display: block;
+  padding: 112px 85px;
   width: 400px;
-  height: 385px;
+  box-sizing: border-box;
 }
 
-.advantages-item-image {
-  width: 800px;
+.advantages-item-wide {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: #82B3D3;
+}
+
+.advantages-wrapper {
+  padding: 81px 85px;
 }
 
 .advantages-title {
-  padding: 0;
-  margin: 112px 112px 62px;
+  margin: 0;
+  margin-bottom: 62px;
+
 }
 
 .advantages-description {
-  padding: 0;
-  margin: 0 85px auto;
+  margin: 0px;
+
 }
 
 .advantages-item:first-child {
-  background-color: #82B3D3;
-  color:#ffffff;
-}
-
-.advantages-item:last-child {
   background-color: #82B3D3;
   color:#ffffff;
 }
@@ -266,29 +256,46 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.services {
-  width: 1200px;
-  padding-top: 64px;
+.advantages-item:last-child {
+  background-color: #82B3D3;
+  color:#ffffff;
+}
+
+.services-header {
+  padding: 64px 347px;
 }
 
 .services-slogan {
-  margin: 0 347px 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .services-promo {
-  margin: 0 355px 64px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
 }
 
 .services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .services-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
   width: 400px;
-  height: 385px;
-  display: block;
-}
+  box-sizing: border-box;
+  padding: 80px 85px;
+ }
 
 .services-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12) ;
@@ -296,63 +303,64 @@ body {
 
 .service-house {
   display: block;
-  margin: 81px 161px 30px 163px;
 }
 
 .service-eating {
   display: block;
-  margin: 82px 162px 31px 163px;
+
 }
 
 .service-souvenir {
   display: block;
-  margin: 79px 167px 28px 168px;
 }
 
 .services-title {
-  margin: 0 85px 30px;
+  margin: 0;
 }
 
 .services-description {
-  margin: 0 85px 81px;
+  margin: 0;
 }
 
 .search {
-  width: 1200px;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 304px;
 }
 
 .search-slogan {
-  margin: 0 451px 20px;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
 .search-description {
-  display: block;
-  margin: 0 304px 54px;
+  margin: 0px;
+  margin-bottom: 54px;
+
 }
 
 .newsletter {
   background-size: 100% auto;
-  width: 1200px;
   text-align: center;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 258px 104px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-index .newsletter  {
-  background: url("../images/newsletter-background.jpg") no-repeat;
+  background: #000000 url("../images/newsletter-background.jpg") no-repeat 50%/cover;
   color:#ffffff;
 }
 
 .newsletter-slogan {
-  padding: 0;
-  margin: 0 398px 20px;
+  margin: 0;
+  margin-bottom: 20px;
  }
 
 .newsletter-description {
-  padding: 0;
-  margin: 20px 362px 54px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .field {
@@ -361,28 +369,33 @@ body {
   line-height: 24px;
   color:#000000;
   background-color:#F2F2F2 ;
-  width: 452px;
-  height: 52px;
-  padding: 0;
+  border-radius: 4px 0px 0px 4px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
   border: 0;
+  flex-grow: 1;
 }
 
 .page-footer {
  display: flex;
- width: 1060px;
+ justify-content: space-between;
  padding: 40px 70px 30px;
 }
 
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 282px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social-item {
   width: 47px;
   height: 40px;
 }
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
