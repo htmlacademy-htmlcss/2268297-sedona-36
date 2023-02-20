@@ -413,7 +413,6 @@ body {
 .filter {
   background: #000000 url("../images/filter-background.jpg") no-repeat 50%/cover;
   color:#ffffff;
-  width: 1060px;
   padding: 35px 70px 70px;
  }
 
@@ -428,7 +427,6 @@ body {
 }
 
 .results {
-  width: 1060px;
   padding: 50px 70px 40px;
 }
 
@@ -437,7 +435,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 538px;
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
