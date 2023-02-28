@@ -125,6 +125,7 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   max-width: 550px;
+  position: relative;
   }
 
 .navigation-item {
@@ -135,7 +136,6 @@ body {
   margin-left: auto;
   align-items: center;
   max-width: 360px;
-  position: relative;
 }
 
 .navigation-link {
@@ -147,6 +147,10 @@ body {
   text-decoration: none;
   display: block;
   padding: 20px 16px;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
 }
 
 .navigation-user .navigation-link {
@@ -161,7 +165,6 @@ body {
 
 .navigation-favourites {
   background: url("../images/heart.svg") no-repeat center;
-  content: "";
 }
 
 .navigation-favourites::before {
@@ -196,10 +199,12 @@ body {
 
 .welcome {
   color:#ffffff;
-  background-color: #000000;
-  background: url("../images/welcome-background.jpg") no-repeat;
-  background-size: cover;
-  padding: 51px 371px 82px;
+  background-color: #220643;
+  background-image: url("../images/welcome-border.svg"), url("../images/welcome-background.jpg") ;
+  background-repeat: no-repeat no-repeat;
+  background-size: auto, cover;
+  background-position: bottom center, center;
+  padding: 50px 370px 82px;
  }
 
 .main-index {
@@ -248,6 +253,9 @@ body {
   padding: 112px 85px;
   width: 400px;
   box-sizing: border-box;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .advantages-item-wide {
@@ -255,30 +263,47 @@ body {
   width: 1200px;
   padding: 0;
   background-color: #82B3D3;
+  color:#ffffff;
+  gap: 0;
 }
 
-
+.advantages-item:not(.advantages-item-wide)::before {
+  content: "";
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  width: 60px;
+  order: 2;
+}
 
 .advantages-wrapper {
   padding: 81px 85px;
   width: 400px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.advantages-wrapper::before {
+  content: "";
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  width: 60px;
+  order: 2;
+
 }
 
 .advantages-title {
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 0;
+  padding-left: 28px;
+  padding-right: 28px;
 
 }
 
 .advantages-description {
   margin: 0px;
-
-}
-
-.advantages-item:first-child {
-  background-color: #82B3D3;
-  color:#ffffff;
+  order: 3;
 }
 
 .advantages-item:nth-child(even) {
