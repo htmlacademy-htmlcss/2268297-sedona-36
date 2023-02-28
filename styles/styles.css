@@ -352,24 +352,30 @@ body {
   margin: 0;
   width: 400px;
   box-sizing: border-box;
-  padding: 80px 85px;
- }
+  padding: 180px 85px 80px;
+}
+
 
 .services-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12) ;
 }
 
-.service-house {
-  display: block;
+.services-item-living {
+  background-image: url("../images/service-house.svg");
+  background-position: 50% 80px;
+  background-repeat: no-repeat;
 }
 
-.service-eating {
-  display: block;
-
+.services-item-eating {
+  background-image: url("../images/service-eating.svg");
+  background-position: 50% 80px;
+  background-repeat: no-repeat;
 }
 
-.service-souvenir {
-  display: block;
+.services-item-souvenirs {
+  background-image: url("../images/service-souvenir.svg");
+  background-position: 50% 80px;
+  background-repeat: no-repeat;
 }
 
 .services-title {
@@ -454,6 +460,10 @@ body {
   height: 40px;
 }
 
+.social-button {
+  display: block;
+  padding: 12px;
+}
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
