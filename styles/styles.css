@@ -641,6 +641,7 @@ body {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
+  gap: 70px;
 }
 
 .filter-form .button {
@@ -652,6 +653,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 40px;
 }
 
 .results-view {
@@ -697,10 +699,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.catalog-filter-group {
-  margin-right: 70px;
 }
 
 .control-input {
