@@ -1072,6 +1072,26 @@ color:#000000;
   padding-left: 36px;
 }
 
+.control:not(:disabled):hover {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark-checkbox {
+  border: 3px solid #83B3D3;
+}
+
+.control:focus .control-mark-radio {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:disabled {
+  opasity: 0.8;
+}
+
 .control-mark-checkbox {
   position: absolute;
   content: "";
