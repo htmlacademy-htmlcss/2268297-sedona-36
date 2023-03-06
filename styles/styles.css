@@ -115,10 +115,21 @@ body {
   align-items: center;
 }
 
-.navigation-logo {
+.navigation-logo, .navigation-logo-index {
   margin-bottom: -15px;
   z-index: 1;
+}
 
+.navigation-logo:hover {
+  opacity: 0.8;
+}
+
+.navigation-logo:focus {
+  outline: 2px solid #054f80;
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
 }
 
 .navigation-list {
@@ -469,6 +480,7 @@ body {
   align-items: center;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .modal-container-close {
@@ -586,6 +598,33 @@ body {
     -webkit-appearance: none;
 }
 
+.modal-window-field:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-window-field:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-window-field:active {
+  background-color: #E6E6E6;
+  outline: 2px solid #000000;
+}
+
+.modal-window-field:active {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
+.modal-window-field:placeholder-shown {
+  background-color: #E6E6E6;
+}
+
+.modal-window-field:not(:hover):disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
 .comment-of-date {
 position: absolute;
 left: 156px;
@@ -630,6 +669,7 @@ color:#000000;
   left: -56px;
   top: 54px;
   width: 217px;
+  display: none;
 }
 
 .button-info {
@@ -649,6 +689,11 @@ color:#000000;
 
 .button-info:hover {
   background-color: #537f9c;
+}
+
+.button-info:hover + .popover-info,
+.button-info:focus + .popover-info {
+  display: block;
 }
 
 .button-info:focus {
@@ -705,7 +750,7 @@ color:#000000;
 
 .button-amount:focus{
   color: #000000;
-  border: 3px solid #82B3D3;
+  outline: 3px solid #82B3D3;
 }
 
 .button-amount:active {
@@ -773,11 +818,6 @@ color:#000000;
   padding: 0;
   margin: 0;
 }
-
-.footer-social-item {
-
-}
-
 
 .social-button {
   display: block;
